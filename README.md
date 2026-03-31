@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Atividade1
 
 Sistema de leilões desenvolvido em Java para gerenciamento de produtos, lances e usuários.
 
