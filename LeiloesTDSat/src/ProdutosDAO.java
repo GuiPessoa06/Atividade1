@@ -35,6 +35,18 @@ public class ProdutosDAO {
         }
     }
 
+    public void venderProduto(int id) throws Exception {
+        Connection conn = Conexao.getConnection();
+
+        String sql = "UPDATE produtos SET status = 'Vendido' WHERE id = ?";
+
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setInt(1, id);
+
+        stmt.executeUpdate();
+        conn.close();
+    }
+
     // 🔹 LISTAR PRODUTOS
     public ArrayList<ProdutosDTO> listarProdutos() {
 
