@@ -36,7 +36,8 @@ public class ProdutosDAO {
     }
 
     public void venderProduto(int id) throws Exception {
-        Connection conn = Conexao.getConnection();
+        
+        conn = new conectaDAO().connectDB();
 
         String sql = "UPDATE produtos SET status = 'Vendido' WHERE id = ?";
 
