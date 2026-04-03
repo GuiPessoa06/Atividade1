@@ -154,7 +154,6 @@ public class vendasVIEW extends javax.swing.JFrame {
                     listagem.get(i).getId(),
                     listagem.get(i).getNome(),
                     listagem.get(i).getValor(),
-                    listagem.get(i).getStatus()
                 });
             }
         } catch (Exception e) {
